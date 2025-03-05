@@ -14,11 +14,14 @@ console.log(getComputerChoice());
 
 // Get human's choice
 function getHumanChoice() {
-    humanChoice = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
+    let humanChoice = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
     return humanChoice;
 }
 
 console.log(getHumanChoice());
 
-// Compare choices
-// 
+// Declare players score variables
+let humanScore = 0;
+let computerScore = 0;
+
+// Play single round
