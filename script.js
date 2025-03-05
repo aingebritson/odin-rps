@@ -65,6 +65,7 @@ function playGame() {
 
     console.log("Score: " + humanScore + " to " +computerScore);
 
+    // Play to 5
     while (humanScore < 5 && computerScore < 5) {
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();        
@@ -72,6 +73,7 @@ function playGame() {
         console.log("Score: " + humanScore + " to " +computerScore);
     }
 
+    // Declare winner
     if (computerScore === 5) {
         console.log ("Game over! You lose!");
     } else {
