@@ -1,20 +1,24 @@
 // Get computer's choice
 function getComputerChoice() {
-    return Math.floor(Math.random() * 3 + 1);
+    let computerChoice = Math.floor(Math.random() * 3 + 1);
+    if (computerChoice === 1) {
+        return "Rock";
+    } else if (computerChoice === 2) {
+        return "Paper";
+    } else {
+        return "Scissors";
+    }
 }
 
-let computerChoice;
-
-if (getComputerChoice() === 1) {
-    computerChoice = "Rock";
-} else if (getComputerChoice() === 2) {
-    computerChoice = "Paper";
-} else {
-    computerChoice = "Scissors";
-}
-
-console.log(computerChoice)
+console.log(getComputerChoice());
 
 // Get human's choice
+function getHumanChoice() {
+    humanChoice = prompt("Enter 'Rock', 'Paper', or 'Scissors'");
+    return humanChoice;
+}
+
+console.log(getHumanChoice());
+
 // Compare choices
 // 
